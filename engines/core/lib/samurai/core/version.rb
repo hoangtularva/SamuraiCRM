@@ -1,3 +1,5 @@
-module Core
-  VERSION = '0.1.0'
+module Samurai
+  module Core
+    VERSION = '0.1.0'
+  end
 end

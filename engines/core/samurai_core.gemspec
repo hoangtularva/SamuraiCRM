@@ -32,6 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'bootstrap-sass', "~> 3.4.1"
   spec.add_dependency 'autoprefixer-rails', "~> 9.7.3"
   spec.add_dependency 'devise', '~> 4.7.2'
-
+  spec.add_dependency 'cancan'
   spec.add_development_dependency "postgresql"
 end

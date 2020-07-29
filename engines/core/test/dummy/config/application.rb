@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "core"
+require "samurai/core"
 
 module Dummy
   class Application < Rails::Application

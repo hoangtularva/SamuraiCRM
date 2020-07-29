@@ -3,6 +3,7 @@ Samurai::Core::Engine.routes.draw do
 
   namespace :admin do
     get '/' => 'admin#index'
+    resources :users, only: :index
   end
   
   root to: "dashboard#index"

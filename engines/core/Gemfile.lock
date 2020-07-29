@@ -4,6 +4,7 @@ PATH
     samurai_core (0.1.0)
       autoprefixer-rails (~> 9.7.3)
       bootstrap-sass (~> 3.4.1)
+      cancan
       devise (~> 4.7.2)
       rails (~> 6.0.3, >= 6.0.3.2)
       sass-rails (~> 6.0.0)
@@ -73,6 +74,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
     builder (3.2.4)
+    cancan (1.6.10)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     devise (4.7.2)

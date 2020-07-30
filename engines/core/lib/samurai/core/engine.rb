@@ -13,6 +13,8 @@ module Samurai
         end
       end
 
+      config.autoload_paths << File.expand_path("#{root}/lib/samurai", __FILE__)
+
     end
   end
 end

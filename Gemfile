@@ -61,4 +61,5 @@ gem 'deface' # We will use it soon
 gem 'samurai_core', path: 'engines/core'
 
 #contact
-gem 'contacts', path: 'engines/contacts'
+# gem 'contacts', path: 'engines/contacts'
+gem 'samurai_contacts', path: 'engines/contacts'

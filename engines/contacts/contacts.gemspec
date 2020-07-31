@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "contacts/version"
+require "samurai/contacts/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
   spec.name        = "samurai_contacts"
-  spec.version     = Contacts::VERSION
+  spec.version     = Samurai::Contacts::VERSION
   spec.authors     = ["hoangtularva"]
   spec.email       = ["hoangtukg295@gmail.com"]
   spec.homepage    = "http://samurails.com"
-  spec.summary     = "Contact feature for SamuraiCRM."
-  spec.description = "Contact feature for SamuraiCRM."
+  spec.summary     = "Contacts feature for SamuraiCRM."
+  spec.description = "Contacts feature for SamuraiCRM."
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

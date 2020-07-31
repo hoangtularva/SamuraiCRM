@@ -53,6 +53,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#contact
 gem 'modular_engine'
 gem 'deface' # We will use it soon
 
@@ -60,3 +61,4 @@ gem 'deface' # We will use it soon
 gem 'samurai_core', path: 'engines/core'
 
 #contact
+gem 'contacts', path: 'engines/contacts'

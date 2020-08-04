@@ -1,5 +1,5 @@
-require "core/engine"
-
-module Core
-  # Your code goes here...
+module Samurai
+  module Core
+    
+  end
 end

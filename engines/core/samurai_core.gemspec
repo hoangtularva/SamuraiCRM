@@ -27,5 +27,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 5.1.7"
 
+  spec.add_dependency 'sass-rails'
+  spec.add_dependency 'bootstrap-sass'
+  spec.add_dependency 'autoprefixer-rails'
+
   spec.add_development_dependency "postgresql"
 end

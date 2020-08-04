@@ -1,2 +1,5 @@
-//= link_directory ../javascripts/core .js
-//= link_directory ../stylesheets/core .css
+//= link_tree ../images
+//= link_directory ../stylesheets .css
+//= require jquery
+//= link samurai/application.css
+//= link samurai/application.js

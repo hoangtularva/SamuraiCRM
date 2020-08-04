@@ -33,6 +33,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'autoprefixer-rails'
   # user
   spec.add_dependency 'devise'
+  # role
+  spec.add_dependency 'cancan'
 
   spec.add_development_dependency "postgresql"
 end

@@ -4,7 +4,7 @@ module Samurai
         #authorize_resource class: false
 
         def index
-         
+          authorize! :manage, nil
         end
       end
     end

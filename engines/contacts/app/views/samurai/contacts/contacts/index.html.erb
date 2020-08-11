@@ -27,7 +27,7 @@
             <td>
                 <%= link_to 'Show', [samurai, contact], class: 'btn btn-primary' %>
                 <%= link_to 'Edit', samurai.edit_contact_path(contact), class: 'btn btn-primary' %>
-                <%= link_to 'Destroy', [samurai, contact], class: 'btn btn-danger' , method: :delete, data: { confirm: 'Are you sure?' } %>
+                <%= link_to 'Destroy', [samurai, contact], class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
             </td>
           </tr>
         <% end %>

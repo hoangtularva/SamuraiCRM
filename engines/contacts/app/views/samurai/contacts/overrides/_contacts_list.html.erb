@@ -10,7 +10,7 @@
                 <th>Created On</th>
             </thead>
             <tbody>
-                <%- current_user.contacts.each do |contact| %>
+               <%- @contacts.each do |contact| %>
                     <tr>
                         <td><%= contact.id %></td>
                         <td><%= contact.first_name %> <%= contact.first_name %></td>

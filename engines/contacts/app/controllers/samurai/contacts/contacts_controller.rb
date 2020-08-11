@@ -25,9 +25,10 @@ module Samurai::Contacts
     # POST /contacts
     def create
       @contact = Contact.new(contact_params)
-
+      @contact.user = current_user
       if @contact.save
-        redirect_to @contact, notice: 'Contact was successfully created.'
+        # Add samurai to access the correct path
+        redirect_to [samurai, @contact], notice: 'Contact was successfully created.'
       else
         render :new
       end
@@ -36,7 +37,8 @@ module Samurai::Contacts
     # PATCH/PUT /contacts/1
     def update
       if @contact.update(contact_params)
-        redirect_to @contact, notice: 'Contact was successfully updated.'
+        # Add samurai to access the correct path
+        redirect_to [samurai, @contact], notice: 'Contact was successfully updated.'
       else
         render :edit
       end
@@ -45,7 +47,8 @@ module Samurai::Contacts
     # DELETE /contacts/1
     def destroy
       @contact.destroy
-      redirect_to contacts_url, notice: 'Contact was successfully destroyed.'
+      # Add samurai to access the correct path
+      redirect_to samurai.contacts_url, notice: 'Contact was successfully destroyed.'
     end
 
     private
@@ -56,7 +59,8 @@ module Samurai::Contacts
 
       # Only allow a trusted parameter "white list" through.
       def contact_params
-        params.fetch(:contact, {})
+       # Add the parameters we allow
+        params.require(:contact).permit(:first_name, :last_name, :company, :email, :phone, :user_id)
       end
   end
 end

@@ -1,6 +1,6 @@
 module Samurai
   module Contacts
-    class ApplicationController < ActionController::Base
+    class ApplicationController < Samurai::ApplicationController
     end
   end
 end

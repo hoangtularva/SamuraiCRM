@@ -17,6 +17,14 @@ PATH
       rails (~> 5.1.7)
       sass-rails
 
+PATH
+  remote: engines/tasks
+  specs:
+    samurai_tasks (0.0.1)
+      deface
+      rails (~> 5.1.7)
+      samurai_core
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -233,6 +241,7 @@ DEPENDENCIES
   rails (~> 5.1.7)
   samurai_contacts!
   samurai_core!
+  samurai_tasks!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

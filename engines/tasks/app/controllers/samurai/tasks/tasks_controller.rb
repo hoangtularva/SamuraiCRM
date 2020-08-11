@@ -56,7 +56,7 @@ module Samurai::Tasks
 
       # Only allow a trusted parameter "white list" through.
       def task_params
-        params.fetch(:task, {})
+        params.require(:task).permit(:title, :content, :user_id, :contact_id)
       end
   end
 end

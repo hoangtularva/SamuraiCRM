@@ -3,6 +3,7 @@ module Samurai
     class UsersController < AdminController
 
       def index
+        authorize! :manage, nil
         @users = Samurai::User.ordered
       end
 

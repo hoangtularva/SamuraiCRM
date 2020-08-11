@@ -58,7 +58,7 @@ GEM
       sassc (>= 2.0.0)
     builder (3.2.4)
     cancan (1.6.10)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     crass (1.0.6)
     devise (4.7.2)
       bcrypt (~> 3.0)

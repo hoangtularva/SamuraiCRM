@@ -21,9 +21,10 @@ ActiveRecord::Schema.define(version: 20200804160050) do
     t.string "company"
     t.string "email"
     t.string "phone"
-    t.integer  "user_id"
+    t.bigint "samurai_users_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["samurai_users_id"], name: "index_samurai_contacts_contacts_on_samurai_users_id"
   end
 
   create_table "samurai_users", force: :cascade do |t|
@@ -39,4 +40,5 @@ ActiveRecord::Schema.define(version: 20200804160050) do
     t.index ["reset_password_token"], name: "index_samurai_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "samurai_contacts_contacts", "samurai_users", column: "samurai_users_id"
 end

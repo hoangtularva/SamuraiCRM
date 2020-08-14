@@ -1,4 +1,12 @@
 PATH
+  remote: engines/contacts
+  specs:
+    samurai_contacts (0.0.1)
+      deface
+      rails (~> 5.1.7)
+      samurai_core
+
+PATH
   remote: engines/core
   specs:
     samurai_core (0.1.0)
@@ -231,6 +239,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
   rails (~> 5.1.7)
+  samurai_contacts!
   samurai_core!
   samurai_tasks!
   sass-rails (~> 5.0)

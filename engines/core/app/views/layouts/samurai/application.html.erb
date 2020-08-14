@@ -29,7 +29,7 @@
                         </li>
                     <% end %>
                     <li>
-                        <%= link_to 'Logout', samurai.destroy_user_session_path, method: :delete %>
+                        <%= link_to 'Logout', samurai.destroy_user_session_path, method: :get, data: { confirm: 'Are you sure?' } %>
                     </li>
                 </ul>
             </div>

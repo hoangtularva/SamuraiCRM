@@ -4,7 +4,7 @@
 
 * Rails version 5.1.2
 
-* DB: p
+* DB: postgresql
 
 * bundle install
 

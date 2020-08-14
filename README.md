@@ -10,6 +10,8 @@
 
 * Sign up acccount
 
+* Admin: hoangtu@gmail.com - hoangtu
+
 * Set Role Admin:
 
 * - rails console

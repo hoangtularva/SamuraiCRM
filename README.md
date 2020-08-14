@@ -7,3 +7,11 @@
 * bundle install
 
 * rails s
+
+* Sign up acccount
+
+* Set Role Admin:
+
+* - rails console
+
+* - Samurai::User.first.update_column :admin, true

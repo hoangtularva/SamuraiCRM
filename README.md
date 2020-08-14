@@ -1,24 +1,17 @@
-# README
+# SamuraiCRM
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 2.6.3
 
-Things you may want to cover:
+* Rails version 5.1.2
 
-* Ruby version
+* bundle install
 
-* System dependencies
+* rails s
 
-* Configuration
+* Sign up acccount
 
-* Database creation
+* Set Role Admin:
 
-* Database initialization
+* - rails console
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* - Samurai::User.first.update_column :admin, true

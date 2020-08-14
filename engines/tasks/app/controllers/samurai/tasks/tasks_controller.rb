@@ -7,6 +7,7 @@ module Samurai::Tasks
     # GET /tasks
     def index
       @tasks = Task.all
+      #@tasks = current_user.tasks
     end
 
     # GET /tasks/1
@@ -20,12 +21,13 @@ module Samurai::Tasks
 
     # GET /tasks/1/edit
     def edit
+      authorize! :manage, nil
     end
 
     # POST /tasks
     def create
       @task = Task.new(task_params)
-
+     # @task.user = current_user
       if @task.save
         redirect_to @task, notice: 'Task was successfully created.'
       else
@@ -44,6 +46,7 @@ module Samurai::Tasks
 
     # DELETE /tasks/1
     def destroy
+      authorize! :manage, nil
       @task.destroy
       redirect_to tasks_url, notice: 'Task was successfully destroyed.'
     end
